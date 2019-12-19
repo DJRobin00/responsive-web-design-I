@@ -77,6 +77,10 @@ header nav {
 	
 }
 
+header .logo-tablet {
+    display: none;
+}
+
 header nav a {
 	margin: 0 20px;
 	color: lightgrey;
@@ -137,6 +141,10 @@ h1 {
     
   }
 
+.second {
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid black;
+}
 
 #l4, #l5, #l6, #l7, #l8 {
     display: flex;
@@ -148,3 +156,64 @@ h1 {
 #l4 p, #l5 p, #l6 p, #l7 p, #l8 p {
       width: auto;
   }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer address {
+    padding: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        justify-content: row-reverse;
+        margin-top: 45px;
+        
+    }
+
+    .left {
+        display: flex;
+        font-size: 120px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #l1, #l2, #l3 {
+        padding:auto;
+    }
+    header .top-art, header .logo {
+        display: none;
+    }
+
+    .middle-img {
+            width: 100%;
+            height: auto;
+    }
+
+   
+}
+
+@media (max-width: 425px) {
+
+    header nav a {
+        display: flex;
+        justify-content: column;
+        width:auto;
+        border-bottom: 1px solid black;
+    }
+}
