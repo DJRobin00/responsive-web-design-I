@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 880px;
+	margin: auto;
+	padding:  20px 20px 100px 20px;
+}
+
+
+.subheader{
+	display:flex;
+	padding-top: 25px;
+	justify-content: center;
+}
+
+.logo {
+	padding-left: 50px;
+	padding-bottom: 5px;
+}
+
+header nav {
+	display: flex;
+}
+
+header nav a {
+	font-size: 20px;
+	margin: 10px 30px 0 0;
+	color: grey;
+	text-decoration: none;
+	text-align: center;
+}
+
+h1 {
+	font-size: 80px;
+	display: flex;
+	
+}
+
+h2 {
+	font-size: 30px;
+}
+
+.top p, .bottom p {
+	display: flex;
+	width: 40%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0 10px 0;
+}
+
+.boxes{
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+}
+
+.left, .right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+#box1, #box2, #box3, 
+#box4, #box5, #box6 {
+	background: #f2f2f2;
+	margin: 20px;
+	padding: 18px;
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+
+}
+
+button {
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0.959);
+  	color: black;
+	border: 1px solid black;
+	padding: 5px 20px 5px 20px;
+}
+
+
+footer {
+	margin: 20px;
+}
+.end1 {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.end2 {
+	padding: 30px;
+	display:flex;
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.poll {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*
+.poll ul {
+	list-style-position: 2px solid black;
+}
+
+*/
+.poll a {
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.copyright{
+	display: flex;
+	justify-content: center;
+	margin: 40px;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0 20px 0;
+    }
+
+    .subheader {
+        display: flex;
+        flex-direction: column-reverse;
+        
+	}
+	
+    .logo {
+		padding-left: 0;
+		padding-bottom: 0
+	}
+
+    .subheader .logo {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+    }
+
+    header .services-header {
+        width: 100%;
+        height: auto;
+    }
+
+    header nav {
+		display: flex;
+        margin-top: 20px;
+        
+	}
+	
+	header nav a {
+		margin: auto;
+	}
+
+	h2 {
+		margin: 10px auto;
+	}
+
+	.info p {
+		font-size: medium;
+	}
+
+	#box1, #box2, #box3, 
+	#box4, #box5, #box6 {
+		background: #f2f2f2;
+		margin: 10px;
+		padding: 18px;
+		width: 400px;
+		height: 200px;
+		border: 1px solid black;
+	
+	}
+	
+	.boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 40px;
+		width:100%;
+	}
+
+	.end2 {
+		padding: 30px;
+		display:flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+   
+	.poll {
+		margin: 0 auto;
+	}
+   
+	.services-footer {
+		padding: 20px 0;
+		width: 100%;
+  		height: auto;
+	}
+}
+
+@media (max-width: 500px) {
+
+    .subheader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
+    .subheader a {
+        border-bottom: 1px solid black;
+        width:100%;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+}
