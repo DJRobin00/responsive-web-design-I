@@ -104,11 +104,6 @@ h1 {
 h2 {
 	font-size: 30px;
 }
-.cta-container {
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-}
 
 .top p, .bottom p {
 	display: flex;
@@ -179,10 +174,10 @@ footer {
 
 /*
 .poll ul {
-	list-style-position: square;
+	list-style-position: 2px solid black;
 }
-*/
 
+*/
 .poll a {
 	color: black;
 	text-decoration: none;
@@ -192,15 +187,115 @@ footer {
 	justify-content: space-between;
 }
 
-.services-info-img {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	size: 200px;
-}
-
 .copyright{
 	display: flex;
 	justify-content: center;
 	margin: 40px;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0 20px 0;
+    }
+
+    .subheader {
+        display: flex;
+        flex-direction: column-reverse;
+        
+	}
+	
+    .logo {
+		padding-left: 0;
+		padding-bottom: 0
+	}
+
+    .subheader .logo {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+    }
+
+    header .services-header {
+        width: 100%;
+        height: auto;
+    }
+
+    header nav {
+		display: flex;
+        margin-top: 20px;
+        
+	}
+	
+	header nav a {
+		margin: auto;
+	}
+
+	h2 {
+		margin: 10px auto;
+	}
+
+	.info p {
+		font-size: medium;
+	}
+
+	#box1, #box2, #box3, 
+	#box4, #box5, #box6 {
+		background: #f2f2f2;
+		margin: 10px;
+		padding: 18px;
+		width: 400px;
+		height: 200px;
+		border: 1px solid black;
+	
+	}
+	
+	.boxes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 40px;
+		width:100%;
+	}
+
+	.end2 {
+		padding: 30px;
+		display:flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+   
+	.poll {
+		margin: 0 auto;
+	}
+   
+	.services-footer {
+		padding: 20px 0;
+		width: 100%;
+  		height: auto;
+	}
+}
+
+@media (max-width: 500px) {
+
+    .subheader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
+    .subheader a {
+        border-bottom: 1px solid black;
+        width:100%;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+    }
+
 }
